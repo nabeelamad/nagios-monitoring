@@ -26,4 +26,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Docker build 
         run: |
-         docker build ./build.sh -t jasonrivers/nagios:latest
+         docker build ./Dockerfile -t jasonrivers/nagios:latest
