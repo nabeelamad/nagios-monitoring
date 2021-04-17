@@ -46,4 +46,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/nagiosmonitoring:latest
           
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
+          
           
